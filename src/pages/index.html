@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="https://bereal.com/favicon.ico" type="image/x-icon">
+    <title>BeReal</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="addABeReal.html">Add a BeReal</a>
+        <a href="deleteABeReal.html">Delete a BeReal</a>
+    </nav>
+    <div class="container">
+    <div class="bereals">
+        <div class="fotos">
+            <img src="../img/Edit 2.png" id="foto2" class="foto" >
+            <img src="../img/Edit 8.png" id="foto1" class="foto">
+        </div>
+        <div class="fotos">
+            <img src="../img/Edit 2.png" id="foto2" class="foto" >
+            <img src="../img/Edit 8.png" id="foto1" class="foto">
+        </div>
+        <div class="fotos">
+            <img src="../img/Edit 2.png" id="foto2" class="foto" >
+            <img src="../img/Edit 8.png" id="foto1" class="foto">
+        </div>
+        <div class="fotos">
+            <img src="../img/Edit 2.png" id="foto2" class="foto" >
+            <img src="../img/Edit 8.png" id="foto1" class="foto">
+        </div>  
+        </div>
+    </div>
+</div>
+    <script>
+        const element = document.getElementById('foto2');
+        const element2 = document.getElementById('foto1');
+
+        element.addEventListener('click', () => {
+            let src = element.src;
+            element.src = element2.src;
+            element2.src = src;
+        })
+    </script>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>

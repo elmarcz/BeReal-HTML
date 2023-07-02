@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    background: black;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 85vh;
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(217,217,227,.8);
+    border-color: rgba(255,255,255,1);
+    border-radius: 9999px;
+    border-width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 9999px;
+}
+
+.bereals {
+    height: 80vh;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.bereals .fotos {
+    position: relative;
+    width: 450px;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+.bereals .fotos .foto {
+    border-radius: 15px;
+    position: absolute;
+}
+
+#foto1 {
+    height: 600px;
+    width: 450px;
+    z-index: 1;
+}
+
+#foto2 {
+    height: 200px;
+    width: 160px;
+    margin: 15px;
+    border: 3px solid #000;
+    z-index: 2;
+    cursor: move;
+}
